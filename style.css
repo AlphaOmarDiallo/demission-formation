@@ -6,11 +6,12 @@ font-family: 'Roboto', sans-serif;
 
 /*All pages modifications*/
 html{
-    background-image: url("image/png/background.png");
+    /*background-image: url("image/png/background.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size:cover;
+    background-size:cover;*/
+    background-color: #B9B8D3;
     font-family: 'Source Code Pro', monospace;
 }
 body{
