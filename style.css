@@ -1,0 +1,307 @@
+/*fonts 
+font-family: 'Lato', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/*All pages modifications*/
+html{
+    background-image: url("image/png/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    color:black;
+    font-size: 14px;
+}
+
+h2, h3, h4, h5, h6,{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family:'Lato', sans-serif;
+    color: #21A179;
+    font-size: 40px;
+}
+
+h2{
+    color: #A31621;
+    font-size: 30px;
+    padding-left: 10.1%;
+}
+h3 {
+    color: #B9B8D3;
+    font-size: 25px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+li{
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+section{
+    background-color: rgba(255,255,255, 0.200);
+    border-radius: 5px;
+    height: 500px;
+    padding: 20px;
+    margin: 15px;
+}
+/*navbar*/
+nav {
+    background-color:#21A179;
+    font-family: 'Lato', sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #21A179;
+}
+
+nav li{
+    float: left;
+}
+
+#contact_me{
+    float:right;
+    border: none;
+    padding-top: 5px;
+    padding-right: 25px;
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #21A179;
+    text-decoration: none;
+    width: 160px;
+}
+
+nav a:hover{
+    background-color: #0f6147;
+    transform: scale(1.1);
+}
+.active{
+    background-color: #1fb686;
+}
+
+/*footer*/
+footer{
+    background-color:#21a178c7;
+    padding: 10px;
+    border-radius:0px 0px 5px 5px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+footer img{
+    width: 40px;
+}
+
+/*page index*/
+#about{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#about img{
+    width: 250px;
+    border-radius: 50%;
+    padding: 20px;
+}
+#description{
+    width: 60%;
+    padding: auto;
+}
+#portrait{
+    width: 20%;
+}
+#social_media{
+    background-color:none;
+    padding: 10px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#social_media img{
+    width: 40px;
+}
+
+#hard_skills{
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-around;
+}
+
+#sub_titles{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.hs_item{
+    display: flex;
+    flex-flow: column wrap;
+    height: 350px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+}
+
+.hs_item img{
+    width: 80px;
+}
+
+#soft_skills{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container_soft_skills {
+  position: relative;
+  top: 100px;
+  left: 5%;
+  width: 40%;
+  max-width: 400px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 110px;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 40%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container_soft_skills:hover .overlay {
+  opacity: 1;
+}
+
+#contact_form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+/*page2*/
+
+.s_page2{
+    background-color: rgba(255,255,255, 0.200);
+    border-radius: 5px;
+    height: 600px;
+    padding: 20px;
+    margin: 15px;
+}
+
+.s_page2 ul{
+    list-style-type: none;
+}
+.s_page2 li{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.200);
+    border-radius: 5px;
+    border: black 1px solid;
+    padding: 1px;
+    margin: 5px;
+    color: black;
+}
+
+.school:hover{
+    background-color: #21A179;
+}
+
+.s_page2 a{
+    text-decoration: none;
+}
+
+.s_page2 h3{
+    color: black;
+}
+
+/*page3*/
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+th{
+    height: 100px;
+    text-align: center;
+    background-color: #21a17888;
+    color: whitesmoke;
+}
+tr{
+    text-align: center;
+    height: 60px;
+    background-color: #b9b8d379;
+}
+tr:nth-child(odd){
+    background-color:#b9b8d35e;
+}
+tr:last-child{
+    background-color: #21a1784f;
+    height: 30px;
+}
+
+#why{
+    background-color: rgba(255,255,255, 0.200);
+    border-radius: 5px;
+    height: 680px;
+    padding: 20px;
+    margin: 15px;
+}
+
+#training_program{
+    background-color: rgba(255,255,255, 0.200);
+    border-radius: 5px;
+    height: 1100px;
+    padding: 20px;
+    margin: 15px;
+}
+
+#training_program ul{
+    list-style-type: none;
+}
+/*page4*/
